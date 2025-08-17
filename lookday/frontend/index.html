@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LookDay</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">LookDay</div>
+    </header>
+    <main>
+      <section id="upload-section">
+        <h2>Upload de Looks</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+          <input
+            type="file"
+            id="look-file"
+            name="look"
+            accept="image/*"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="upload-result"></div>
+      </section>
+      <section id="agenda-section">
+        <h2>Agenda</h2>
+        <div id="agenda-list"></div>
+      </section>
+      <section id="perfil-section">
+        <h2>Perfil</h2>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Usuário" required />
+          <input type="password" id="password" placeholder="Senha" required />
+          <button type="submit">Entrar</button>
+        </form>
+        <div id="perfil-info"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
